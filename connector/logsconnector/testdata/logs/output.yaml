@@ -1,0 +1,3046 @@
+resourceLogs:
+  - resource:
+      attributes:
+        - key: resource.required
+          value:
+            stringValue: foo
+        - key: resource.optional
+          value:
+            stringValue: bar
+    scopeLogs:
+      - logRecords:
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: name
+                    value:
+                      stringValue: gauge-int
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "123"
+                  - key: message
+                    value:
+                      stringValue: metric
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-int
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "456"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: value
+                    value:
+                      stringValue: "789"
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-int
+                  - key: type
+                    value:
+                      stringValue: Gauge
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-int
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "0"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: value
+                    value:
+                      stringValue: "1.23"
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-double
+                  - key: type
+                    value:
+                      stringValue: Gauge
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: name
+                    value:
+                      stringValue: gauge-double
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "4.56"
+                  - key: message
+                    value:
+                      stringValue: metric
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-double
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "7.89"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-double
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "0"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-int
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "123"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "456"
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-int
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-int
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "789"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-int
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "0"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "1.23"
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-double
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-double
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "4.56"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-double
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "4.56"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-double
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "0"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-histogram
+                  - key: type
+                    value:
+                      stringValue: Histogram
+                  - key: count
+                    value:
+                      intValue: "1"
+                  - key: sum
+                    value:
+                      doubleValue: 15
+                  - key: buckets
+                    value:
+                      arrayValue: {}
+                  - key: bounds
+                    value:
+                      arrayValue: {}
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: name
+                    value:
+                      stringValue: double-histogram
+                  - key: type
+                    value:
+                      stringValue: Histogram
+                  - key: count
+                    value:
+                      intValue: "2"
+                  - key: sum
+                    value:
+                      doubleValue: 30
+                  - key: buckets
+                    value:
+                      arrayValue: {}
+                  - key: bounds
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: type
+                    value:
+                      stringValue: Histogram
+                  - key: count
+                    value:
+                      intValue: "3"
+                  - key: sum
+                    value:
+                      doubleValue: 45
+                  - key: buckets
+                    value:
+                      arrayValue: {}
+                  - key: bounds
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-histogram
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: name
+                    value:
+                      stringValue: double-histogram
+                  - key: type
+                    value:
+                      stringValue: Histogram
+                  - key: count
+                    value:
+                      intValue: "0"
+                  - key: sum
+                    value:
+                      doubleValue: 0
+                  - key: buckets
+                    value:
+                      arrayValue: {}
+                  - key: bounds
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-summary
+                  - key: type
+                    value:
+                      stringValue: Summary
+                  - key: count
+                    value:
+                      intValue: "1"
+                  - key: sum
+                    value:
+                      doubleValue: 15
+                  - key: quantile
+                    value:
+                      arrayValue: {}
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: count
+                    value:
+                      intValue: "2"
+                  - key: sum
+                    value:
+                      doubleValue: 30
+                  - key: quantile
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-summary
+                  - key: type
+                    value:
+                      stringValue: Summary
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: name
+                    value:
+                      stringValue: double-summary
+                  - key: type
+                    value:
+                      stringValue: Summary
+                  - key: count
+                    value:
+                      intValue: "3"
+                  - key: sum
+                    value:
+                      doubleValue: 45
+                  - key: quantile
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: quantile
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-summary
+                  - key: type
+                    value:
+                      stringValue: Summary
+                  - key: count
+                    value:
+                      intValue: "0"
+                  - key: sum
+                    value:
+                      doubleValue: 0
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+        scope: {}
+  - resource:
+      attributes:
+        - key: resource.required
+          value:
+            stringValue: foo
+        - key: resource.optional
+          value:
+            stringValue: notbar
+    scopeLogs:
+      - logRecords:
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-int
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "123"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: value
+                    value:
+                      stringValue: "456"
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-int
+                  - key: type
+                    value:
+                      stringValue: Gauge
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: value
+                    value:
+                      stringValue: "789"
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-int
+                  - key: type
+                    value:
+                      stringValue: Gauge
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: value
+                    value:
+                      stringValue: "0"
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-int
+                  - key: type
+                    value:
+                      stringValue: Gauge
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-double
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "1.23"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-double
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "4.56"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "7.89"
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-double
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "0"
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-double
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-int
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "123"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: name
+                    value:
+                      stringValue: counter-int
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "456"
+                  - key: message
+                    value:
+                      stringValue: metric
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-int
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "789"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: value
+                    value:
+                      stringValue: "0"
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-int
+                  - key: type
+                    value:
+                      stringValue: counter
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: name
+                    value:
+                      stringValue: counter-double
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "1.23"
+                  - key: message
+                    value:
+                      stringValue: metric
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-double
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "4.56"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-double
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "4.56"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-double
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "0"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: name
+                    value:
+                      stringValue: double-histogram
+                  - key: type
+                    value:
+                      stringValue: Histogram
+                  - key: count
+                    value:
+                      intValue: "1"
+                  - key: sum
+                    value:
+                      doubleValue: 15
+                  - key: buckets
+                    value:
+                      arrayValue: {}
+                  - key: bounds
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: name
+                    value:
+                      stringValue: double-histogram
+                  - key: type
+                    value:
+                      stringValue: Histogram
+                  - key: count
+                    value:
+                      intValue: "2"
+                  - key: sum
+                    value:
+                      doubleValue: 30
+                  - key: buckets
+                    value:
+                      arrayValue: {}
+                  - key: bounds
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: buckets
+                    value:
+                      arrayValue: {}
+                  - key: bounds
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-histogram
+                  - key: type
+                    value:
+                      stringValue: Histogram
+                  - key: count
+                    value:
+                      intValue: "3"
+                  - key: sum
+                    value:
+                      doubleValue: 45
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-histogram
+                  - key: type
+                    value:
+                      stringValue: Histogram
+                  - key: count
+                    value:
+                      intValue: "0"
+                  - key: sum
+                    value:
+                      doubleValue: 0
+                  - key: buckets
+                    value:
+                      arrayValue: {}
+                  - key: bounds
+                    value:
+                      arrayValue: {}
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: quantile
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-summary
+                  - key: type
+                    value:
+                      stringValue: Summary
+                  - key: count
+                    value:
+                      intValue: "1"
+                  - key: sum
+                    value:
+                      doubleValue: 15
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: type
+                    value:
+                      stringValue: Summary
+                  - key: count
+                    value:
+                      intValue: "2"
+                  - key: sum
+                    value:
+                      doubleValue: 30
+                  - key: quantile
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-summary
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-summary
+                  - key: type
+                    value:
+                      stringValue: Summary
+                  - key: count
+                    value:
+                      intValue: "3"
+                  - key: sum
+                    value:
+                      doubleValue: 45
+                  - key: quantile
+                    value:
+                      arrayValue: {}
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: count
+                    value:
+                      intValue: "0"
+                  - key: sum
+                    value:
+                      doubleValue: 0
+                  - key: quantile
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-summary
+                  - key: type
+                    value:
+                      stringValue: Summary
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+        scope: {}
+  - resource:
+      attributes:
+        - key: resource.int
+          value:
+            intValue: "1"
+        - key: resource.optional_int
+          value:
+            intValue: "2"
+    scopeLogs:
+      - logRecords:
+          - attributes:
+              - key: datapoint.int
+                value:
+                  intValue: "1"
+              - key: datapoint.optional_int
+                value:
+                  intValue: "2"
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-int
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "123"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.int
+                value:
+                  intValue: "1"
+              - key: datapoint.optional_int
+                value:
+                  intValue: "4"
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-int
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "456"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.int
+                value:
+                  intValue: "10"
+            body:
+              kvlistValue:
+                values:
+                  - key: name
+                    value:
+                      stringValue: gauge-int
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "789"
+                  - key: message
+                    value:
+                      stringValue: metric
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-int
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "0"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.int
+                value:
+                  intValue: "1"
+              - key: datapoint.optional_int
+                value:
+                  intValue: "2"
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-double
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "1.23"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.int
+                value:
+                  intValue: "1"
+              - key: datapoint.optional_int
+                value:
+                  intValue: "4"
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-double
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "4.56"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.int
+                value:
+                  intValue: "10"
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-double
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "7.89"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-double
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "0"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.int
+                value:
+                  intValue: "1"
+              - key: datapoint.optional_int
+                value:
+                  intValue: "2"
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-int
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "123"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.int
+                value:
+                  intValue: "1"
+              - key: datapoint.optional_int
+                value:
+                  intValue: "4"
+            body:
+              kvlistValue:
+                values:
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "456"
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-int
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.int
+                value:
+                  intValue: "10"
+            body:
+              kvlistValue:
+                values:
+                  - key: name
+                    value:
+                      stringValue: counter-int
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "789"
+                  - key: message
+                    value:
+                      stringValue: metric
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-int
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "0"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.int
+                value:
+                  intValue: "1"
+              - key: datapoint.optional_int
+                value:
+                  intValue: "2"
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-double
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "1.23"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.int
+                value:
+                  intValue: "1"
+              - key: datapoint.optional_int
+                value:
+                  intValue: "4"
+            body:
+              kvlistValue:
+                values:
+                  - key: name
+                    value:
+                      stringValue: counter-double
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "4.56"
+                  - key: message
+                    value:
+                      stringValue: metric
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.int
+                value:
+                  intValue: "10"
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-double
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "4.56"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-double
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "0"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.int
+                value:
+                  intValue: "1"
+              - key: datapoint.optional_int
+                value:
+                  intValue: "2"
+            body:
+              kvlistValue:
+                values:
+                  - key: buckets
+                    value:
+                      arrayValue: {}
+                  - key: bounds
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-histogram
+                  - key: type
+                    value:
+                      stringValue: Histogram
+                  - key: count
+                    value:
+                      intValue: "1"
+                  - key: sum
+                    value:
+                      doubleValue: 15
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.int
+                value:
+                  intValue: "1"
+              - key: datapoint.optional_int
+                value:
+                  intValue: "4"
+            body:
+              kvlistValue:
+                values:
+                  - key: type
+                    value:
+                      stringValue: Histogram
+                  - key: count
+                    value:
+                      intValue: "2"
+                  - key: sum
+                    value:
+                      doubleValue: 30
+                  - key: buckets
+                    value:
+                      arrayValue: {}
+                  - key: bounds
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-histogram
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.int
+                value:
+                  intValue: "10"
+            body:
+              kvlistValue:
+                values:
+                  - key: sum
+                    value:
+                      doubleValue: 45
+                  - key: buckets
+                    value:
+                      arrayValue: {}
+                  - key: bounds
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-histogram
+                  - key: type
+                    value:
+                      stringValue: Histogram
+                  - key: count
+                    value:
+                      intValue: "3"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: bounds
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-histogram
+                  - key: type
+                    value:
+                      stringValue: Histogram
+                  - key: count
+                    value:
+                      intValue: "0"
+                  - key: sum
+                    value:
+                      doubleValue: 0
+                  - key: buckets
+                    value:
+                      arrayValue: {}
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.int
+                value:
+                  intValue: "1"
+              - key: datapoint.optional_int
+                value:
+                  intValue: "2"
+            body:
+              kvlistValue:
+                values:
+                  - key: type
+                    value:
+                      stringValue: Summary
+                  - key: count
+                    value:
+                      intValue: "1"
+                  - key: sum
+                    value:
+                      doubleValue: 15
+                  - key: quantile
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-summary
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.int
+                value:
+                  intValue: "10"
+              - key: datapoint.optional_int
+                value:
+                  intValue: "4"
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-summary
+                  - key: type
+                    value:
+                      stringValue: Summary
+                  - key: count
+                    value:
+                      intValue: "2"
+                  - key: sum
+                    value:
+                      doubleValue: 30
+                  - key: quantile
+                    value:
+                      arrayValue: {}
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.int
+                value:
+                  intValue: "10"
+            body:
+              kvlistValue:
+                values:
+                  - key: quantile
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-summary
+                  - key: type
+                    value:
+                      stringValue: Summary
+                  - key: count
+                    value:
+                      intValue: "3"
+                  - key: sum
+                    value:
+                      doubleValue: 45
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-summary
+                  - key: type
+                    value:
+                      stringValue: Summary
+                  - key: count
+                    value:
+                      intValue: "0"
+                  - key: sum
+                    value:
+                      doubleValue: 0
+                  - key: quantile
+                    value:
+                      arrayValue: {}
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+        scope: {}
+  - resource:
+      attributes:
+        - key: resource.required
+          value:
+            stringValue: notfoo
+    scopeLogs:
+      - logRecords:
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-int
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "123"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "456"
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-int
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: name
+                    value:
+                      stringValue: gauge-int
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "789"
+                  - key: message
+                    value:
+                      stringValue: metric
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-int
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "0"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "1.23"
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-double
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-double
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "4.56"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-double
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "7.89"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: name
+                    value:
+                      stringValue: gauge-double
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "0"
+                  - key: message
+                    value:
+                      stringValue: metric
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-int
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "123"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-int
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "456"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-int
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "789"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-int
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "0"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-double
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "1.23"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-double
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "4.56"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-double
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "4.56"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-double
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "0"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-histogram
+                  - key: type
+                    value:
+                      stringValue: Histogram
+                  - key: count
+                    value:
+                      intValue: "1"
+                  - key: sum
+                    value:
+                      doubleValue: 15
+                  - key: buckets
+                    value:
+                      arrayValue: {}
+                  - key: bounds
+                    value:
+                      arrayValue: {}
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: name
+                    value:
+                      stringValue: double-histogram
+                  - key: type
+                    value:
+                      stringValue: Histogram
+                  - key: count
+                    value:
+                      intValue: "2"
+                  - key: sum
+                    value:
+                      doubleValue: 30
+                  - key: buckets
+                    value:
+                      arrayValue: {}
+                  - key: bounds
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: sum
+                    value:
+                      doubleValue: 45
+                  - key: buckets
+                    value:
+                      arrayValue: {}
+                  - key: bounds
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-histogram
+                  - key: type
+                    value:
+                      stringValue: Histogram
+                  - key: count
+                    value:
+                      intValue: "3"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: count
+                    value:
+                      intValue: "0"
+                  - key: sum
+                    value:
+                      doubleValue: 0
+                  - key: buckets
+                    value:
+                      arrayValue: {}
+                  - key: bounds
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-histogram
+                  - key: type
+                    value:
+                      stringValue: Histogram
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-summary
+                  - key: type
+                    value:
+                      stringValue: Summary
+                  - key: count
+                    value:
+                      intValue: "1"
+                  - key: sum
+                    value:
+                      doubleValue: 15
+                  - key: quantile
+                    value:
+                      arrayValue: {}
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-summary
+                  - key: type
+                    value:
+                      stringValue: Summary
+                  - key: count
+                    value:
+                      intValue: "2"
+                  - key: sum
+                    value:
+                      doubleValue: 30
+                  - key: quantile
+                    value:
+                      arrayValue: {}
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: count
+                    value:
+                      intValue: "3"
+                  - key: sum
+                    value:
+                      doubleValue: 45
+                  - key: quantile
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-summary
+                  - key: type
+                    value:
+                      stringValue: Summary
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: count
+                    value:
+                      intValue: "0"
+                  - key: sum
+                    value:
+                      doubleValue: 0
+                  - key: quantile
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-summary
+                  - key: type
+                    value:
+                      stringValue: Summary
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+        scope: {}
+  - resource: {}
+    scopeLogs:
+      - logRecords:
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "123"
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-int
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: name
+                    value:
+                      stringValue: gauge-int
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "456"
+                  - key: message
+                    value:
+                      stringValue: metric
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-int
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "789"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: value
+                    value:
+                      stringValue: "0"
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-int
+                  - key: type
+                    value:
+                      stringValue: Gauge
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: name
+                    value:
+                      stringValue: gauge-double
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "1.23"
+                  - key: message
+                    value:
+                      stringValue: metric
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: name
+                    value:
+                      stringValue: gauge-double
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "4.56"
+                  - key: message
+                    value:
+                      stringValue: metric
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: gauge-double
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "7.89"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: name
+                    value:
+                      stringValue: gauge-double
+                  - key: type
+                    value:
+                      stringValue: Gauge
+                  - key: value
+                    value:
+                      stringValue: "0"
+                  - key: message
+                    value:
+                      stringValue: metric
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-int
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "123"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-int
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "456"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "789"
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-int
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-int
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "0"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "1.23"
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-double
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-double
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "4.56"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-double
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "4.56"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: counter-double
+                  - key: type
+                    value:
+                      stringValue: counter
+                  - key: value
+                    value:
+                      stringValue: "0"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: buckets
+                    value:
+                      arrayValue: {}
+                  - key: bounds
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-histogram
+                  - key: type
+                    value:
+                      stringValue: Histogram
+                  - key: count
+                    value:
+                      intValue: "1"
+                  - key: sum
+                    value:
+                      doubleValue: 15
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: sum
+                    value:
+                      doubleValue: 30
+                  - key: buckets
+                    value:
+                      arrayValue: {}
+                  - key: bounds
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-histogram
+                  - key: type
+                    value:
+                      stringValue: Histogram
+                  - key: count
+                    value:
+                      intValue: "2"
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: type
+                    value:
+                      stringValue: Histogram
+                  - key: count
+                    value:
+                      intValue: "3"
+                  - key: sum
+                    value:
+                      doubleValue: 45
+                  - key: buckets
+                    value:
+                      arrayValue: {}
+                  - key: bounds
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-histogram
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-histogram
+                  - key: type
+                    value:
+                      stringValue: Histogram
+                  - key: count
+                    value:
+                      intValue: "0"
+                  - key: sum
+                    value:
+                      doubleValue: 0
+                  - key: buckets
+                    value:
+                      arrayValue: {}
+                  - key: bounds
+                    value:
+                      arrayValue: {}
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: bar
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-summary
+                  - key: type
+                    value:
+                      stringValue: Summary
+                  - key: count
+                    value:
+                      intValue: "1"
+                  - key: sum
+                    value:
+                      doubleValue: 15
+                  - key: quantile
+                    value:
+                      arrayValue: {}
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: foo
+              - key: datapoint.optional
+                value:
+                  stringValue: notbar
+            body:
+              kvlistValue:
+                values:
+                  - key: name
+                    value:
+                      stringValue: double-summary
+                  - key: type
+                    value:
+                      stringValue: Summary
+                  - key: count
+                    value:
+                      intValue: "2"
+                  - key: sum
+                    value:
+                      doubleValue: 30
+                  - key: quantile
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - attributes:
+              - key: datapoint.required
+                value:
+                  stringValue: notfoo
+            body:
+              kvlistValue:
+                values:
+                  - key: message
+                    value:
+                      stringValue: metric
+                  - key: name
+                    value:
+                      stringValue: double-summary
+                  - key: type
+                    value:
+                      stringValue: Summary
+                  - key: count
+                    value:
+                      intValue: "3"
+                  - key: sum
+                    value:
+                      doubleValue: 45
+                  - key: quantile
+                    value:
+                      arrayValue: {}
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+          - body:
+              kvlistValue:
+                values:
+                  - key: name
+                    value:
+                      stringValue: double-summary
+                  - key: type
+                    value:
+                      stringValue: Summary
+                  - key: count
+                    value:
+                      intValue: "0"
+                  - key: sum
+                    value:
+                      doubleValue: 0
+                  - key: quantile
+                    value:
+                      arrayValue: {}
+                  - key: message
+                    value:
+                      stringValue: metric
+            severityText: INFO
+            spanId: ""
+            traceId: ""
+        scope: {}

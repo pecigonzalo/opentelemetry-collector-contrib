@@ -1,0 +1,12 @@
+type: metricstolog
+scope_name: otelcol/logconnector
+
+status:
+  class: connector
+  stability:
+    development: [metrics_to_logs]
+  distributions: [contrib]
+  codeowners:
+    active: [tbd]
+
+tests:
