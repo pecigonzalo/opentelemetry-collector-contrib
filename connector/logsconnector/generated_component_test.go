@@ -17,7 +17,7 @@ import (
 )
 
 func TestComponentFactoryType(t *testing.T) {
-	require.Equal(t, "metricstolog", NewFactory().Type().String())
+	require.Equal(t, "metricstologs", NewFactory().Type().String())
 }
 
 func TestComponentConfigStruct(t *testing.T) {

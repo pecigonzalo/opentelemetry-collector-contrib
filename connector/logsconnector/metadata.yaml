@@ -1,4 +1,4 @@
-type: metricstolog
+type: metricstologs
 scope_name: otelcol/logconnector
 
 status:

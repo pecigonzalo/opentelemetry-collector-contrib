@@ -12,13 +12,13 @@ exporters:
     path: /tmp/metrics.json
 
 connectors:
-  log:
+  metricstologs:
 
 service:
   pipelines:
     metrics:
       receivers: [otlp]
-      exporters: [log]
+      exporters: [metricstologs]
     logs:
-      receivers: [log]
+      receivers: [metricstologs]
       exporters: [file]

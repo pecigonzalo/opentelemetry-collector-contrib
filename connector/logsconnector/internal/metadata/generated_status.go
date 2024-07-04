@@ -7,7 +7,7 @@ import (
 )
 
 var (
-	Type = component.MustNewType("metricstolog")
+	Type = component.MustNewType("metricstologs")
 )
 
 const (
